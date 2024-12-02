@@ -1,8 +1,8 @@
 column1 = []
 column2 = []
 
-with open("1/data.txt", "r") as file:
-    for line in file:
+with open("1/data.txt", "r") as f:
+    for line in f:
         values = line.split()  
         column1.append(int(values[0]))
         column2.append(int(values[1]))

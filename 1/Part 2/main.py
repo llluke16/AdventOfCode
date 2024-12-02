@@ -1,11 +1,11 @@
 column1 = []
 column2 = []
 
-with open("1/data.txt", "r") as file:
-    for line in file:
-        values = line.split()  
-        column1.append(int(values[0]))
-        column2.append(int(values[1]))
+with open("1/data.txt", "r") as f:
+    for line in f:
+        val = line.split()  
+        column1.append(int(val[0]))
+        column2.append(int(val[1]))
                 
 def calcSimilarity(list1, list2):
     similarityScore = 0
